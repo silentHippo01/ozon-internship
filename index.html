@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <script defer src="./script.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css"> 
+    <link rel="stylesheet" href="./styles/fontStyle.css"> 
+
+</head>
+<body>
+    <div class="progress">
+        <div class="progress__container">
+            <div class="progress__inner">
+                <div class="progress__bar">
+                    <svg class="progress__ring" width="240" height="240" fill="transparent">
+                        <circle stroke="#c8c7c7" stroke-width="17" cx="120" cy="120" r="104" fill=""/>
+                        <circle class="progress__circle" stroke="#2f46dd" stroke-width="17" cx="120" cy="120" r="104"/>
+                    </svg>
+                </div>
+
+                <div class="progress__inputs">
+
+                    <label for="progress__inputs-value"><input id="progress__inputs-value"> Value</label>
+
+                    <label class="progress__switch" id="progress__switch-animate">
+                        <input type="checkbox" id="input">
+                        <span class="slider round"></span>
+                        <p class="slider-text">Animate</p>
+                    </label>
+
+                    <label class="progress__switch" id="progress__switch-hide">
+                        <input type="checkbox" id="input">
+                        <span class="slider round"></span>
+                        <p class="slider-text">Hide</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
