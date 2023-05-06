@@ -17,7 +17,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* padding: 10px; */
 }
 
 .progress__bar{
@@ -115,9 +116,13 @@
     left: 90px
   }
 
-  @media screen and (max-width: 442px) {
+  @media screen and (max-width: 450px) {
     .progress__bar{
       margin-bottom: 50px;
       margin-right: 0px;
+    }
+
+    .progress__inner{
+      flex-direction: column;
     }
   }

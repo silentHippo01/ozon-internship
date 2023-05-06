@@ -15,7 +15,6 @@ circle.style.strokeDashoffset = circleLength;
 function setProgress(per){
     const offset = circleLength - per / 100 * circleLength;
     circle.style.strokeDashoffset = offset;
-    console.log(offset)
 }
 function animateHandler(e){  
     if(e.target.checked){
