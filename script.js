@@ -7,7 +7,6 @@ const circle = document.querySelector('.progress__circle');
 
 const radius = circle.r.baseVal.value;
 const circleLength = 2 * Math.PI * radius;
-console.log(circleLength);
 
 circle.style.strokeDasharray = `${circleLength} ${circleLength}`;
 circle.style.strokeDashoffset = circleLength;
